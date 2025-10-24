@@ -10,6 +10,7 @@ void timer(unsigned long tempo, void(*proximoEstado)()); //inicializando a funç
 
 void setup() // configura e inicializa os leds e chaves
 { 
+
   iniciarLed(vermelhoA, 0);
   iniciarLed(vermelhoB, 0);
   iniciarLed(amareloA, 0);
