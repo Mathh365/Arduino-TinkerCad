@@ -1,7 +1,7 @@
 # 🎨 Controle RGB com Arduino  
 
-Um projeto interativo criado para explorar **controle de cores RGB** usando **Arduino UNO**, **botões**, e **potenciômetros**.  
-O objetivo é permitir a seleção de cores básicas (R, G, B, Y, P, C) e o ajuste fino de intensidade de cada cor via potenciômetros.
+Um projeto desenvolvido como **avaliação prática da faculdade**, composto por **3 exercícios integrados em um único código**, cada um implementado em uma **função independente**.  
+O objetivo geral é explorar diferentes formas de controle de um **LED RGB** utilizando **interruptores**, **potenciômetros** e **transições suaves com millis()**.
 
 ---
 
@@ -9,8 +9,8 @@ O objetivo é permitir a seleção de cores básicas (R, G, B, Y, P, C) e o ajus
 
 - 🟦 1x Arduino UNO  
 - 🔴 1x LED RGB (cátodo comum)  
-- 🎚️ 3x Potenciômetros (para ajustar R, G e B)  
-- 🔘 6x Botões (para selecionar cores predefinidas: R, G, B, Y, P, C)  
+- 🔘 6x Botões (para cores primárias e secundárias)  
+- 🎚️ 3x Potenciômetros (para controle analógico das cores)  
 - 🪫 Resistores (220Ω e 10kΩ)  
 - 🔌 Jumpers macho-macho  
 
@@ -24,9 +24,33 @@ Visualização do circuito montado no **Tinkercad**:
 
 ---
 
-## 💡 Funcionamento  
+## 🧠 Estrutura do Projeto  
 
-Cada botão aciona uma combinação de cores:  
+O código foi dividido em três funções principais, correspondentes a cada exercício:
+
+### 🧩 Exercício 1 — Controle de Cores com Interruptores  
+> **Descrição:**  
+> Controla as cores primárias e secundárias de um LED RGB utilizando interruptores.  
+> Cada interruptor ativa uma cor específica (R, G, B, Y, P, C).  
+
+---
+
+### 🎚️ Exercício 2 — Controle Analógico de Cores com Potenciômetros  
+> **Descrição:**  
+> Permite controlar continuamente a intensidade de cada cor primária (Vermelho, Verde e Azul) usando potenciômetros.  
+> Assim, é possível criar misturas de cores analógicas e suaves em tempo real.  
+
+---
+
+### 🌈 Exercício 3 — Transição Suave de Cores (Fade) com `millis()`  
+> **Descrição:**  
+> Cria um efeito de **transição suave (fade)** entre as cores primárias do LED RGB.  
+> O tempo é controlado de forma **não bloqueante** com `millis()`, permitindo alternar entre vermelho, verde e azul com `analogWrite()` sem travar o loop principal.  
+
+---
+
+## 💡 Funcionamento Geral  
+
 | Cor | Componentes Ativos |
 |------|--------------------|
 | 🔴 Vermelho | R |
@@ -36,53 +60,44 @@ Cada botão aciona uma combinação de cores:
 | 🟣 Magenta | R + B |
 | 🔵 Ciano | G + B |
 
-Os potenciômetros permitem ajustar manualmente a intensidade de cada canal RGB em tempo real.
+Os potenciômetros controlam a intensidade de cada canal RGB, enquanto o modo “fade” alterna automaticamente entre as cores.
 
 ---
 
-## 🧠 Lógica do Código  
+## 📄 Código  
 
-O programa foi desenvolvido em **C++ para Arduino**, e sua estrutura inclui:  
-- **Leitura analógica** dos potenciômetros (A0, A1, A2)  
-- **Leitura digital** dos botões (com `digitalRead()`)  
-- **Controle PWM** das cores com `analogWrite()`  
-- **Função de debounce** para evitar leituras falsas nos botões  
+O código completo pode ser encontrado aqui: [`codigo.ino`](codigo.ino)  
 
-📄 Código completo: [`codigo.ino`](codigo.ino)
+Ele inclui:
+- Leitura de botões e potenciômetros  
+- Controle PWM com `analogWrite()`  
+- Uso de `millis()` para controle de tempo sem `delay()`  
+- Estrutura modular com funções separadas para cada exercício  
 
 ---
 
 ## 🚀 Como Testar  
 
-1. Abra o código no **Arduino IDE**.  
+1. Abra o arquivo `codigo.ino` no **Arduino IDE**.  
 2. Conecte o Arduino UNO via USB.  
 3. Faça o upload do código.  
-4. Experimente pressionar os botões e girar os potenciômetros!  
-
----
-
-## 🎯 Objetivo  
-
-Este projeto foi desenvolvido com fins **educacionais**, explorando o funcionamento prático de:  
-- Entradas analógicas e digitais  
-- Controle PWM  
-- Mistura de cores RGB  
-- Organização modular de código Arduino  
+4. Ative os botões ou gire os potenciômetros para testar cada modo!  
 
 ---
 
 ## 🧩 Aprendizados  
 
-- Diferença entre entrada analógica e digital  
-- Controle de brilho via PWM  
-- Uso de resistores e debounce em botões  
-- Implementação de lógica condicional e leitura em tempo real  
+- Diferença entre **entradas digitais e analógicas**  
+- Controle de brilho via **PWM**  
+- Uso de **millis()** para controle não bloqueante  
+- Organização modular de código Arduino  
+- Conceitos práticos de **mistura de cores RGB**
 
 ---
 
 ## 🏁 Resultado  
 
-O projeto final permite brincar com **mistura de cores em tempo real**, aprendendo na prática conceitos fundamentais de eletrônica e programação embarcada.  
+Um sistema interativo e educativo que une três abordagens de controle de LEDs RGB, demonstrando diferentes técnicas e boas práticas de programação embarcada.  
 
 > “Aprender é transformar curiosidade em criação.” ✨  
 
