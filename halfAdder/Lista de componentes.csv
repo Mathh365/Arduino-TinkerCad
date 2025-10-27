@@ -1,0 +1,6 @@
+﻿Nome,Quantidade,Componente
+"S1, SSwitch1",2," Interruptor deslizante"
+"R1, R4",2,"220 Ω Resistor"
+"R2, R3",2,"10 kΩ Resistor"
+"D1, D2",2,"Vermelho LED"
+"U1",1," Arduino Uno R3"

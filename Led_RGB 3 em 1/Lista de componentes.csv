@@ -1,0 +1,8 @@
+﻿Nome,Quantidade,Componente
+"U1",1," Arduino Uno R3"
+"R1, R2, R3",3,"220 Ω Resistor"
+"D1",1,"RCBG LED RGB"
+"Rpot1, Rpot2, Rpot3",3,"250 kΩ Potenciômetro"
+"R4, R5, R6",3,"330 Ω Resistor"
+"S1, S2, S3, S4, S5, S6",6," Botão"
+"R7, R8, R9, R10, R11, R12",6,"10 kΩ Resistor"
