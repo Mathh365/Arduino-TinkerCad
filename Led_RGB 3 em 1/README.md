@@ -5,7 +5,7 @@ O objetivo geral é explorar diferentes formas de controle de um **LED RGB** uti
 
 ---
 
-## ⚙️ Componentes Utilizados  
+## Componentes Utilizados  
 
 - 🟦 1x Arduino UNO  
 - 🔴 1x LED RGB (cátodo comum)  
@@ -16,7 +16,7 @@ O objetivo geral é explorar diferentes formas de controle de um **LED RGB** uti
 
 ---
 
-## 🔩 Circuito  
+## Circuito  
 
 Visualização do circuito montado no **Tinkercad**:  
 
@@ -24,32 +24,32 @@ Visualização do circuito montado no **Tinkercad**:
 
 ---
 
-## 🧠 Estrutura do Projeto  
+## Estrutura do Projeto  
 
 O código foi dividido em três funções principais, correspondentes a cada exercício:
 
-### 🧩 Exercício 1 — Controle de Cores com Interruptores  
+### Exercício 1 — Controle de Cores com Interruptores  
 > **Descrição:**  
 > Controla as cores primárias e secundárias de um LED RGB utilizando interruptores.  
 > Cada interruptor ativa uma cor específica (R, G, B, Y, P, C).  
 
 ---
 
-### 🎚️ Exercício 2 — Controle Analógico de Cores com Potenciômetros  
+### Exercício 2 — Controle Analógico de Cores com Potenciômetros  
 > **Descrição:**  
 > Permite controlar continuamente a intensidade de cada cor primária (Vermelho, Verde e Azul) usando potenciômetros.  
 > Assim, é possível criar misturas de cores analógicas e suaves em tempo real.  
 
 ---
 
-### 🌈 Exercício 3 — Transição Suave de Cores (Fade) com `millis()`  
+### Exercício 3 — Transição Suave de Cores (Fade) com `millis()`  
 > **Descrição:**  
 > Cria um efeito de **transição suave (fade)** entre as cores primárias do LED RGB.  
 > O tempo é controlado de forma **não bloqueante** com `millis()`, permitindo alternar entre vermelho, verde e azul com `analogWrite()` sem travar o loop principal.  
 
 ---
 
-## 💡 Funcionamento Geral  
+## Funcionamento Geral  
 
 | Cor | Componentes Ativos |
 |------|--------------------|
@@ -64,7 +64,7 @@ Os potenciômetros controlam a intensidade de cada canal RGB, enquanto o modo �
 
 ---
 
-## 📄 Código  
+## Código  
 
 O código completo pode ser encontrado aqui: [`codigo.ino`](codigo.ino)  
 
@@ -76,16 +76,7 @@ Ele inclui:
 
 ---
 
-## 🚀 Como Testar  
-
-1. Abra o arquivo `codigo.ino` no **Arduino IDE**.  
-2. Conecte o Arduino UNO via USB.  
-3. Faça o upload do código.  
-4. Ative os botões ou gire os potenciômetros para testar cada modo!  
-
----
-
-## 🧩 Aprendizados  
+## Aprendizados  
 
 - Diferença entre **entradas digitais e analógicas**  
 - Controle de brilho via **PWM**  
@@ -95,15 +86,8 @@ Ele inclui:
 
 ---
 
-## 🏁 Resultado  
+## Resultado  
 
 Um sistema interativo e educativo que une três abordagens de controle de LEDs RGB, demonstrando diferentes técnicas e boas práticas de programação embarcada.  
 
 > “Aprender é transformar curiosidade em criação.” ✨  
-
----
-
-## 📷 Créditos  
-
-Projeto criado e desenvolvido por **Mir4aii**  
-Feito com ❤️ e café ☕  
