@@ -29,7 +29,9 @@ Visualização do circuito montado no **Tinkercad**:
 O código foi dividido em três funções principais, correspondentes a cada exercício:
 
 ### Exercício 1 — Controle de Cores com Interruptores  
+
 > **Descrição:**  
+> Atravez da função "potenciometro()"
 > Controla as cores primárias e secundárias de um LED RGB utilizando interruptores.  
 > Cada interruptor ativa uma cor específica (R, G, B, Y, P, C).  
 
@@ -37,6 +39,7 @@ O código foi dividido em três funções principais, correspondentes a cada exe
 
 ### Exercício 2 — Controle Analógico de Cores com Potenciômetros  
 > **Descrição:**  
+> Atravez da função "controleDeCores((1 ou 0))"
 > Permite controlar continuamente a intensidade de cada cor primária (Vermelho, Verde e Azul) usando potenciômetros.  
 > Assim, é possível criar misturas de cores analógicas e suaves em tempo real.  
 
@@ -44,6 +47,7 @@ O código foi dividido em três funções principais, correspondentes a cada exe
 
 ### Exercício 3 — Transição Suave de Cores (Fade) com `millis()`  
 > **Descrição:**  
+> Atravez da função "transicao()"
 > Cria um efeito de **transição suave (fade)** entre as cores primárias do LED RGB.  
 > O tempo é controlado de forma **não bloqueante** com `millis()`, permitindo alternar entre vermelho, verde e azul com `analogWrite()` sem travar o loop principal.  
 
