@@ -1,4 +1,4 @@
-# 🎨 Controle RGB com Arduino  
+# Controle RGB com Arduino  
 
 Um projeto desenvolvido como **avaliação prática da faculdade**, composto por **3 exercícios integrados em um único código**, cada um implementado em uma **função independente**.  
 O objetivo geral é explorar diferentes formas de controle de um **LED RGB** utilizando **interruptores**, **potenciômetros** e **transições suaves com millis()**.
