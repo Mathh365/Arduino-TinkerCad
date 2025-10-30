@@ -8,7 +8,7 @@ O objetivo foi criar um controle de tráfego que **se adapta dinamicamente** à 
 ## Conceito
 
 Diferente de um semáforo comum com tempos fixos, este utiliza **sensores** para detectar veículos e decidir automaticamente qual via deve abrir.  
-Além disso, o uso da função `millis()` permite **controle assíncrono do tempo**, evitando travamentos e possibilitando múltiplas tarefas simultâneas — uma prática essencial em sistemas embarcados.
+Além disso, o uso da função `millis()` permite **controle assíncrono do tempo**, evitando travamentos e possibilitando múltiplas tarefas simultâneas, uma prática essencial em sistemas embarcados.
 
 ---
 
@@ -68,8 +68,8 @@ https://github.com/user-attachments/assets/fe5e8e34-0e45-4188-b9e6-5eb811d6c6ee
 ### ✨ Conclusão
 
 Este semáforo inteligente foi uma ótima forma de unir **lógica, eletrônica e programação limpa**.  
-Além de funcionar de maneira realista, ele reforça a importância de pensar **de forma assíncrona e modular** — conceitos fundamentais para qualquer desenvolvedor embarcado.
+Além de funcionar de maneira realista, ele reforça a importância de pensar **de forma assíncrona e modular**, conceitos fundamentais para qualquer desenvolvedor embarcado.
 
 ---
 
-> *“Não é só sobre acender LEDs — é sobre pensar como um sistema.”*
+> *“Não é só sobre acender LEDs, é sobre pensar como um sistema.”*
