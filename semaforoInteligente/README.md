@@ -43,6 +43,9 @@ O sistema opera em diferentes modos, conforme as condições:
 - 🚙 **Carro em uma única via:** prioridade para a via ocupada.  
 - 🌙 **Nenhum carro detectado:** pisca amarelo intermitente.
 
+
+
+
 ---
 
 ## 🧠 Habilidades Desenvolvidas
@@ -58,7 +61,7 @@ Este projeto me ajudou a fortalecer:
 
 ## 📸 Mídia do Projeto
 
-🖼️ *Imagem do circuito e vídeo da execução serão adicionados em breve.*
+https://github.com/user-attachments/assets/fe5e8e34-0e45-4188-b9e6-5eb811d6c6ee
 
 ---
 
